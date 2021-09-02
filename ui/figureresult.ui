@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>figureresult</class>
+ <widget class="QWidget" name="figureresult">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1900</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1900</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1900</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>计算结果</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>68</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>开始时间</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>10</y>
+     <width>68</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>结束时间</string>
+   </property>
+  </widget>
+  <widget class="QDateTimeEdit" name="startTime">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>10</y>
+     <width>194</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="calendarPopup">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QDateTimeEdit" name="endTime">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>10</y>
+     <width>194</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="calendarPopup">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="search">
+   <property name="geometry">
+    <rect>
+     <x>820</x>
+     <y>10</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>查询</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="expor">
+   <property name="geometry">
+    <rect>
+     <x>930</x>
+     <y>10</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>导出</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="table">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>60</y>
+     <width>1880</width>
+     <height>501</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>1900</width>
+     <height>16777215</height>
+    </size>
+   </property>
+   <column>
+    <property name="text">
+     <string>文件名</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>经度</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>纬度</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>有效波高（m）</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>峰波周期（s）</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>峰波频率（Hz）</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>峰波波向（°）</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>流速</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>流向</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>数据时间</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QPushButton" name="clo">
+   <property name="geometry">
+    <rect>
+     <x>1040</x>
+     <y>10</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>关闭</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

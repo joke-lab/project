@@ -1,0 +1,32 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Ubuntu.qss</file>
+        <file>MacOS.qss</file>
+        <file>ManjaroMix.qss</file>
+        <file>MaterialDark.qss</file>
+        <file>NeonButtons.qss</file>
+        <file>icon/about.png</file>
+        <file>icon/batchpor.png</file>
+        <file>icon/color.png</file>
+        <file>icon/com.png</file>
+        <file>icon/help.png</file>
+        <file>icon/ins.png</file>
+        <file>icon/number.png</file>
+        <file>icon/play.png</file>
+        <file>icon/power_off.png</file>
+        <file>icon/power_on.png</file>
+        <file>icon/region.png</file>
+        <file>icon/replay.png</file>
+        <file>icon/running.png</file>
+        <file>icon/stop.png</file>
+        <file>icon/system.png</file>
+        <file>icon/trans_off.png</file>
+        <file>icon/trans_on.png</file>
+        <file>icon/add.png</file>
+        <file>icon/remove.png</file>
+        <file>icon/wave.png</file>
+        <file>icon/button_start.png</file>
+        <file>icon/button_quit.png</file>
+        <file>icon/button_stop.png</file>
+    </qresource>
+</RCC>

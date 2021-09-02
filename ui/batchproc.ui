@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>batchproc</class>
+ <widget class="QWidget" name="batchproc">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1500</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1500</width>
+    <height>500</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>批处理</string>
+  </property>
+  <widget class="QComboBox" name="comboBox">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>460</y>
+     <width>131</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>RRAW数据格式</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QPushButton" name="deal">
+   <property name="geometry">
+    <rect>
+     <x>1180</x>
+     <y>460</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>开始处理</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="exPort">
+   <property name="geometry">
+    <rect>
+     <x>1290</x>
+     <y>460</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>导出</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="close">
+   <property name="geometry">
+    <rect>
+     <x>1400</x>
+     <y>460</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>退出</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="tab">
+   <property name="geometry">
+    <rect>
+     <x>9</x>
+     <y>80</y>
+     <width>1481</width>
+     <height>361</height>
+    </rect>
+   </property>
+   <column>
+    <property name="text">
+     <string>文件名</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>经度</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>纬度</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>有效波高（m）</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>峰波周期（s）</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>峰波频率（Hz）</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>峰波波向（°）</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>流速</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>流向</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>数据时间</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QPushButton" name="areaChoice">
+   <property name="geometry">
+    <rect>
+     <x>960</x>
+     <y>10</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>区域选择</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="sysSet">
+   <property name="geometry">
+    <rect>
+     <x>1070</x>
+     <y>10</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>系统设置</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="add">
+   <property name="geometry">
+    <rect>
+     <x>1180</x>
+     <y>10</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>添加文件</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="delall">
+   <property name="geometry">
+    <rect>
+     <x>1290</x>
+     <y>10</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>全部清除</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="del">
+   <property name="geometry">
+    <rect>
+     <x>1400</x>
+     <y>10</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>删除</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="check_xlsx">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>101</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>输出.xlsx</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="excelPath">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>10</y>
+     <width>91</width>
+     <height>28</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="excelP">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>10</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>输出路径</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>10</y>
+     <width>111</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>excel文件名称：</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="excelName">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>10</y>
+     <width>81</width>
+     <height>28</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>10</y>
+     <width>68</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>.xlsx</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>40</y>
+     <width>111</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>txt文件名称：</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>40</y>
+     <width>68</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>.txt</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="check_txt">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>40</y>
+     <width>101</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>输出.txt</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="txtPath">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>40</y>
+     <width>91</width>
+     <height>28</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="txtP">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>40</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>输出路径</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="txtName">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>40</y>
+     <width>81</width>
+     <height>28</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
